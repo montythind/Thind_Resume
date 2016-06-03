@@ -22,10 +22,10 @@ body{
 	color: #FFFFFF;
 }
 
-#bgheight{
+#bgheight1{
 	opacity: 1;
 	position: relative;
-	}
+}
 
 .first_content{
 	width: 100%;
@@ -40,25 +40,44 @@ body{
 	padding-bottom: 35px;
 	padding-left: 25px;
 	padding-right: 25px;
-	border: 2px solid red;
-	vertical-align: center;
+	border: 2px solid #606060;
 }
 
 #name{	
 	font-size: 65px;
 	text-transform: uppercase;
 	color: #FFFFFF;
+	-webkit-animation: mymove 2s 1; /* Chrome, Safari, Opera */
+    animation: mymove 2s 1;
 }
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+#name {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
 
 #self{
 	font-size: 30px;
 	color: #C8C8C8 ;
 }
 
-nav{
+.navigation_bar{
 	color: white;	
 	position: fixed;
-	bottom: 0;
+	top: 0;
 	width: 100%;
 	font-size: 18px;
 	background-color: #606060;
@@ -68,8 +87,27 @@ nav li{
 	display: inline-block;
 	list-style: none;
 	padding: 5px;
+	color: #D0D0D0;
 }
 
-section{
-	background-color: black;
+.navigation_bar li:hover{
+	color: #FFFFFF;
+}
+
+
+#bgheight2{
+	opacity: 0.9;
+	position: relative;
+
+}
+
+.second_content{
+	width: 100%;
+}
+
+.second_details{
+	color: red;
+	position: absolute;
+	vertical-align: center; 
+	top: 55%;
 }
