@@ -1,7 +1,7 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	font-size: 0px;
+	
 }
 
 header, section, nav, article, hgroup{
@@ -21,6 +21,10 @@ body{
 	width: 100%;	
 	position: relative;
 	color: #FFFFFF;
+}
+
+.first_background{
+	font-size: 0px;
 }
 
 #bgheight1{
@@ -92,10 +96,29 @@ nav li{
 	color: #FFFFFF;
 }
 
-#bgheight2{
-	opacity: 0.9;
-	position: relative;
+a:visited {
+    color: #D0D0D0;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #FFFFFF;
+    
+}
+a:active {
+    color: #D0D0D0;
+}
 
+#bgheight2{	
+	position: relative;
+}
+
+#profile_photo{
+	position: absolute;
+	border-radius: 50%;
+	top: 55%;	
+	left: 5%;
+	right: 75%;
 }
 
 .second_content{
@@ -103,8 +126,21 @@ nav li{
 }
 
 .second_details{
-	color: red;
+	color: #FF4500;
 	position: absolute;
-	vertical-align: center; 
-	top: 55%;
+	top: 60%;
+	right: 10%;
+	left: 50%;
+	border: 2px solid yellow;
+	text-align: center;
 }
+
+#about_me{
+	text-align: center;
+	margin-left: 25%;
+
+}
+
+
+
+
